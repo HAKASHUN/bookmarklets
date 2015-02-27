@@ -33,7 +33,7 @@ function implementFrameSkip(){
       this.dispatchEvent("tickend");
 
     }
-    if (this.dispatchEvent("drawstart", false, true) === false) { return; }
+
     createjs.DisplayObject._snapToPixelEnabled = this.snapToPixelEnabled;
     var r = this.drawRect, ctx = this.canvas.getContext("2d");
     ctx.setTransform(1, 0, 0, 1, 0, 0);
